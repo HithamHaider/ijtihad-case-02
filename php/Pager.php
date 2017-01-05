@@ -37,7 +37,7 @@ class Pager {
 		$class_name = (empty($parts[0])?'Main':$parts[0]);
 		$func_name = (isset($parts[1]) && !empty($parts[1])?$parts[1]:'Home');
 		$class = new $class_name();
-		
+
 		$params = array();
 		$ref = new ReflectionClass($class_name);
 		$ref_func=$ref->getMethod($func_name);
@@ -50,7 +50,7 @@ class Pager {
 				$params[$param->getName()]=null;
 			}
 		}
-		
+
 		$return = call_user_func_array(array(&$class,$func_name),$params);
 		echo $return;
 	}
