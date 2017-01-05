@@ -1,3 +1,5 @@
 <?php
-echo "Hello";
+include_once 'php/Pager.php';
+$pager = new Pager();
+$pager->handle();
 ?>
