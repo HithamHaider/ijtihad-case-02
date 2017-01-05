@@ -20,7 +20,7 @@ class Main extends Pager {
 	public function doLogin($username, $password) {
 		//$sql = "SELECT * FROM tbl_users WHERE `email`='$username' AND password='$password'";
 		//$arr = $this->DBQuery($sql);
-		return 'Thank you';
+		return 'Thank you ';
 	}
 }
 ?>
